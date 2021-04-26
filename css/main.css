@@ -212,6 +212,7 @@ header {
   padding-bottom: 206px;
   background-image: url("../../images/bg.jpg");
   height: 600px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
@@ -705,6 +706,7 @@ video {
   padding-bottom: 80px;
   background-image: url("../../images/testimonial.png");
   height: 800px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
