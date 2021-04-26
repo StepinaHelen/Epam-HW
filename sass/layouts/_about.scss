@@ -1,61 +1,161 @@
 .about {
   text-align: center;
+  padding-top: 80px;
+  padding-bottom: 34px;
 }
 .cards {
-  margin-right: 40px;
-}
-.square {
-  height: 184px;
-  width: 260px;
-  border-radius: 5px;
-}
-.rectangle {
-  position: relative;
-  height: 32px;
-  width: 228px;
-  background-color: #ffb0b0;
-  border-radius: 5px 5px 0px 0px;
-}
-.rectangle-2 {
-  height: 152px;
-  width: 260px;
-  background-color: #ffb0b0;
-  border-radius: 0px 5px 5px 5px;
-}
-.flex {
-  display: flex;
-}
-.inner-square {
-  // position: relative;
-  height: 32px;
-  width: 32px;
-  // background-color: #ffb0b0;
-  border-radius: 5px 5px 0px 0px;
+  padding: 0px;
+  text-align: center;
+  margin-bottom: 15px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 40px;
+    margin-bottom: 0px;
+  }
 }
 
-.inner-square-2 {
-  // position: relative;
-  height: 32px;
-  width: 32px;
-  background-color: #8a1515;
-  border-radius: 0px 0px 0px 5px;
-}
-.mirrorY {
-  transform: scale(-1, 1);
-}
-.square:not(:last-child) {
-  margin-bottom: 10px;
-}
 .cards-video {
-  display: flex;
-  background-color: #8a1515;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
-.pink {
+.video {
+  position: relative;
+}
+video {
+  width: 300px;
+  @media screen and (min-width: 768px) {
+    width: 468px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 860px;
+    height: 592px;
+  }
+}
+
+.cards-square {
+  display: block;
+  margin: 0px auto;
+  text-align: center;
+  padding-top: 45px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+
+  position: relative;
+  height: 184px;
+  width: 260px;
+  & p {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.64;
+  }
+}
+.cards-square:not(:last-child) {
+  margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    margin-right: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 20px;
+    margin-right: 0px;
+  }
+}
+.cards {
+  display: block;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+.cards-name {
+  transform: scaleX(-1);
+}
+.cards-square-first {
+  border: none;
+  transform: scaleX(-1);
+  background: linear-gradient(
+    -108.56deg,
+    rgba(230, 246, 65, 0.5) 0%,
+    rgba(41, 252, 154, 0.5) 100%
+  );
   background-color: #ffb0b0;
 }
-.blue {
+.cards-square-second {
+  border: none;
+
+  background: linear-gradient(
+    -236.77deg,
+    rgba(247, 247, 247, 0.5) 0%,
+    rgba(35, 86, 255, 0.5) 100%
+  );
   background-color: #b0d1ff;
 }
-.green {
-  background-color: #bdffb0;
+.cards-square-third {
+  border: none;
+  transform: scaleX(-1);
+
+  background: linear-gradient(
+    -236.42deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 9, 9, 0.5) 100%
+  );
+  background-color: #ffb0b0;
+}
+.cards-puzzle {
+  content: '';
+  top: -1px;
+  left: -1px;
+  position: absolute;
+  width: 33px;
+  height: 36px;
+  background-color: $secondary-text-color;
+  border-radius: 0px 0px 5px 0px;
+  border: none;
+  outline: none;
+}
+
+.cards-puzzle::before {
+  content: '';
+  border-top: 3px solid $secondary-text-color;
+  border-right: 3px solid transparent;
+  position: absolute;
+  top: 1px;
+  right: -3px;
+}
+.cards-puzzle::after {
+  content: '';
+  border-top: 3px solid $secondary-text-color;
+  border-right: 3px solid transparent;
+  position: absolute;
+  top: 36px;
+  right: 29px;
+}
+
+.cards-svg {
+  width: 65px;
+  height: 65px;
+  margin-bottom: 18px;
+}
+.cards-svg-position {
+  transform: scaleX(-1);
+}
+
+.video-svg {
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cards-puzzle-test {
+  width: 180px;
+  height: 180px;
+  background-color: #ffb0b0;
+  border-radius: 40px 10px;
 }

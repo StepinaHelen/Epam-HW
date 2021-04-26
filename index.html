@@ -64,7 +64,7 @@
     </div>
     <main>
       <section class="hero">
-        <div class="hero-container">
+        <div class="main-container">
           <h1 class="hero-title">
             Ideas and perspectives you won’t find anywhere else.
           </h1>
@@ -74,58 +74,467 @@
             on topics that matter. So whatever your interest, you can always
             find fresh thinking and unique perspectives.
           </p>
-          <button class="hero-button-explore">Explore</button>
-          <button class="hero-button-learn">Learn more</button>
+          <button class="hero-button-explore button-common">Explore</button>
+          <button class="hero-button-learn button-common">Learn more</button>
         </div>
       </section>
 
       <div class="main-container">
         <section class="about">
-          <h2>About us</h2>
-          <p>This is who we are - or at least who we strive to be…</p>
+          <div class="underline-of-headers-container">
+            <h2 class="text-center header">About us</h2>
+            <div
+              class="underline underline-of-headers about-underline-of-headers"
+            ></div>
+          </div>
+
+          <p class="about-description subtitle">
+            This is who we are - or at least who we strive to be…
+          </p>
           <div class="cards-video">
             <ul class="cards">
-              <li class="square">
-                <div class="flex">
-                  <div class="rectangle green"></div>
-                  <div class="inner-square green">
-                    <div class="inner-square-2"></div>
-                  </div>
-                </div>
-                <div class="rectangle-2 green"></div>
+              <li class="cards-square cards-square-first">
+                <div class="cards-puzzle"></div>
+                <svg class="cards-svg cards-svg-position">
+                  <use href="./images/symbol-defs.svg#icon-typography"></use>
+                </svg>
+                <p class="cards-name">Typography</p>
               </li>
-              <li class="square mirrorY">
-                <div class="flex">
-                  <div class="rectangle blue"></div>
-                  <div class="inner-square blue">
-                    <div class="inner-square-2"></div>
-                  </div>
-                </div>
-                <div class="rectangle-2 blue"></div>
+              <li class="cards-square cards-square-second">
+                <div class="cards-puzzle"></div>
+                <svg class="cards-svg">
+                  <use href="./images/symbol-defs.svg#icon-iconset"></use>
+                </svg>
+                <p>Icon set</p>
               </li>
-              <li class="square">
-                <div class="flex">
-                  <div class="rectangle pink"></div>
-                  <div class="inner-square pink">
-                    <div class="inner-square-2"></div>
-                  </div>
-                </div>
-                <div class="rectangle-2 pink"></div>
+              <li class="cards-square cards-square-third">
+                <div class="cards-puzzle"></div>
+                <svg class="cards-svg cards-svg-position">
+                  <use href="./images/symbol-defs.svg#icon-accurate"></use>
+                </svg>
+                <p class="cards-name">Accurate</p>
               </li>
             </ul>
 
-            <video
-              width="860"
-              height="592"
-              controls
-              poster="./images/about.png"
-            >
-              Тег video не поддерживается вашим браузером.
-              <a href="video/duel.mp4">Скачайте видео</a>.
-            </video>
+            <div class="video">
+              <video poster="./images/about.png">
+                Тег video не поддерживается вашим браузером.
+                <a href="video/duel.mp4">Скачайте видео</a>.
+              </video>
+              <svg class="video-svg">
+                <use href="./images/symbol-defs.svg#icon-play"></use>
+              </svg>
+            </div>
+          </div>
+        </section>
+
+        <section class="posts">
+          <div class="underline-of-headers-container">
+            <h2 class="text-center header">Latest posts</h2>
+            <div
+              class="underline underline-of-headers posts-underline-of-headers"
+            ></div>
+          </div>
+
+          <p class="text-center subtitle">
+            Information is a source of learning. But unless it is organized,
+            processed and available to the right people
+          </p>
+          <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3">
+            <div class="col mb-lg-0 mb-4">
+              <img src="./images/post1.png" class="card-img-top" alt="team" />
+              <div class="card-body">
+                <h3 class="card-title">
+                  In the Future We Will All Live in Star Wars
+                </h3>
+                <p class="card-text">
+                  The thing you’re doing now, reading prose on a screen, is
+                  going out of fashion. The defining narrative of our online
+                  moment concerns the decline of text, and the exploding reach
+                  and power of audio and video…
+                </p>
+                <ul class="post-list">
+                  <li>20 oct, 2019</li>
+                  <li class="post-item">10 min read</li>
+                  <li class="post-item">
+                    <svg class="post-svg">
+                      <use href="./images/symbol-defs.svg#icon-comment"></use>
+                    </svg>
+                    11
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col mb-lg-0 mb-4">
+              <img src="./images/post2.png" class="card-img-top" alt="gamers" />
+              <div class="card-body">
+                <h3 class="card-title">
+                  Rubik’s Cube? No, Robotics and AI are…
+                </h3>
+                <p class="card-text">
+                  In other words, I will try to de-hype the crowd about <br />
+                  the recent development in robotics. Concretely, OpenAI has
+                  claimed some pretty amazing results with learning to solve the
+                  Rubik’s cube with a robotic hand…
+                </p>
+                <ul class="post-list post-list-item">
+                  <li>11 oct, 2019</li>
+                  <li class="post-item">7 min read</li>
+                  <li class="post-item">
+                    <svg class="post-svg">
+                      <use href="./images/symbol-defs.svg#icon-comment"></use>
+                    </svg>
+                    19
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col mb-lg-0 mb-4">
+              <img src="./images/post3.png" class="card-img-top" alt="gamer" />
+              <div class="card-body">
+                <h3 class="card-title">
+                  How the Internet of Things will Transfo…
+                </h3>
+                <p class="card-text">
+                  The Internet of Things (IoT) promises to be the most important
+                  technological development for consumers since the advent of
+                  the smartphone. Experts believe that this collection of
+                  internet-connected technolog…
+                </p>
+                <ul class="post-list">
+                  <li>28 sep, 2019</li>
+                  <li class="post-item">16 min read</li>
+                  <li class="post-item">
+                    <svg class="post-svg">
+                      <use href="./images/symbol-defs.svg#icon-comment"></use>
+                    </svg>
+                    41
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--section   portfolio-->
+        <section id="portfolio" class="portfolio">
+          <div class="underline-of-headers-container">
+            <h2 class="text-center header">Latest portfolio</h2>
+            <div
+              class="underline underline-of-headers portfolio-underline-of-headers"
+            ></div>
+          </div>
+          <p class="text-center subtitle">
+            Put there articles successfully special warrant submit agree what
+            along then
+          </p>
+          <div
+            class="row row-cols-1 row-cols-md-3 row-cols-lg-3 portfolio-container-card"
+          >
+            <div class="col mb-4 portfolio-container">
+              <img
+                src="./images/portfolio1.png"
+                class="card-img-top portfolio-image"
+                alt="team"
+              />
+              <div class="card-body">
+                <div class="portfolio-description">
+                  <h3 class="card-title card-title-portfolio">Art Ocean</h3>
+                  <p class="card-text">Photography, art, nature</p>
+                </div>
+                <div class="overlay">
+                  <ul class="overlay-list">
+                    <li class="overlay-item">
+                      <svg class="overlay-attach">
+                        <use href="./images/symbol-defs.svg#icon-attach"></use>
+                      </svg>
+                    </li>
+                    <li class="overlay-item">
+                      <svg class="overlay-search">
+                        <use
+                          href="./images/symbol-defs.svg#icon-search-1"
+                        ></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4 portfolio-container">
+              <img
+                src="./images/portfolio2.png"
+                class="card-img-top portfolio-image"
+                alt="gamers"
+              />
+              <div class="card-body">
+                <div class="portfolio-description">
+                  <h3 class="card-title card-title-portfolio">City guide</h3>
+                  <p class="card-text">Photography, city, way</p>
+                </div>
+                <div class="overlay">
+                  <ul class="overlay-list">
+                    <li class="overlay-item">
+                      <svg class="overlay-attach">
+                        <use href="./images/symbol-defs.svg#icon-attach"></use>
+                      </svg>
+                    </li>
+                    <li class="overlay-item">
+                      <svg class="overlay-search">
+                        <use
+                          href="./images/symbol-defs.svg#icon-search-1"
+                        ></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4 portfolio-container">
+              <img
+                src="./images/portfolio3.png"
+                class="card-img-top portfolio-image"
+                alt="gamer"
+              />
+              <div class="card-body portfolio-card">
+                <div class="portfolio-description">
+                  <h3 class="card-title card-title-portfolio">Mountains</h3>
+                  <p class="card-text">Art, hiking</p>
+                </div>
+                <div class="overlay">
+                  <ul class="overlay-list">
+                    <li class="overlay-item">
+                      <svg class="overlay-attach">
+                        <use href="./images/symbol-defs.svg#icon-attach"></use>
+                      </svg>
+                    </li>
+                    <li class="overlay-item">
+                      <svg class="overlay-search">
+                        <use
+                          href="./images/symbol-defs.svg#icon-search-1"
+                        ></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="all-buttons-container">
+            <div class="button-container">
+              <button class="button-left buttons portfolio-button-left">
+                <svg class="button-svg">
+                  <use href="./images/symbol-defs.svg#icon-arrow"></use>
+                </svg>
+              </button>
+              <button class="button-right buttons">
+                <svg class="button-svg">
+                  <use href="./images/symbol-defs.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+            <button class="functional-button button-common">
+              See all works
+            </button>
           </div>
         </section>
       </div>
+
+      <section class="testimonials">
+        <div class="main-container">
+          <div class="underline-of-headers-container">
+            <h2 class="testimonials-title header">Testimonials</h2>
+            <div
+              class="underline underline-of-headers testimonials-underline-of-headers"
+            ></div>
+          </div>
+
+          <div class="testimonials-infrom">
+            <div class="testimonials-text-container">
+              <p class="testimonials-text-1">
+                We move at a fast pace. I’m always working on something. I am
+                excited about it!
+              </p>
+              <p class="testimonials-text-2">Martin Oda</p>
+              <p>Product desgner</p>
+            </div>
+            <img
+              class="testimonials-image"
+              src="./images/user.png"
+              alt="user"
+            />
+            <button class="button-left buttons testimonials-button-left">
+              <svg class="button-svg">
+                <use href="./images/symbol-defs.svg#icon-arrow"></use>
+              </svg>
+            </button>
+            <button class="button-right buttons testimonials-button-right">
+              <svg class="button-svg">
+                <use href="./images/symbol-defs.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="contacts" class="contacts">
+        <div class="main-container contacts-main-container">
+          <div class="underline-of-headers-container">
+            <h2 class="testimonials-title header">Contact us</h2>
+            <div
+              class="underline underline-of-headers contacts-underline-of-headers"
+            ></div>
+          </div>
+
+          <p class="text-center subtitle contacts-subtitle">
+            Put there articles successfully special warrant submit agree what
+            along then
+          </p>
+          <ul class="d-flex list-link contacts-link">
+            <li class="list-link-item">
+              <a href="">
+                <svg class="facebook-logo">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="list-link-item">
+              <a href="">
+                <svg>
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="list-link-item">
+              <a href="">
+                <svg>
+                  <use href="./images/symbol-defs.svg#icon-dribbble"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="contacts-container">
+          <div class="main-container contacts-container-relative">
+            <h3 class="contacts-title">What will be next step?</h3>
+
+            <ol class="contacts-list">
+              <li class="contacts-item contacts-item-line">
+                <h4 class="contacts-item-title">We’ll prepare a proposal</h4>
+                <p>
+                  Required scope, timeline and apr. price will be included if
+                  you provide us with detail information about a project.
+                </p>
+              </li>
+              <li class="contacts-item contacts-item-line">
+                <h4 class="contacts-item-title">Together we discuss it</h4>
+                <p>
+                  Let’s get acquainted and discuss all the possible variant and
+                  options. Google Hangouts or Skype usually wirks great.
+                </p>
+              </li>
+              <li class="contacts-item">
+                <h4 class="contacts-item-title">Let’s start building</h4>
+                <p>
+                  When the contract is signed and all goals are set we can start
+                  the first sprint.
+                </p>
+              </li>
+            </ol>
+
+            <div class="contacts-form">
+              <div class="d-flex align-items-center contact-svg-description">
+                <svg class="contact-svg">
+                  <use href="./images/symbol-defs.svg#icon-mail"></use>
+                </svg>
+                <p class="m-0 contact-description">
+                  Write us a few words about your project and we will prepare
+                  proposal for you <br />
+                  within 24 hours
+                </p>
+              </div>
+
+              <div class="contacts-form-container">
+                <form>
+                  <div class="form-group">
+                    <label for="name">Your name</label>
+                    <input
+                      type="name"
+                      class="form-control form-group-input"
+                      id="name"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email</label>
+                    <input
+                      type="email"
+                      class="form-control form-group-input"
+                      id="exampleInputEmail1"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <div class="contacts-label-svg">
+                      <label for="exampleInputPassword1">Password </label>
+                      <div class="d-flex">
+                        <svg class="contacts-svg">
+                          <use
+                            href="./images/symbol-defs.svg#icon-showpass"
+                          ></use>
+                        </svg>
+                        <p class="mb-0 contacts-show">show</p>
+                      </div>
+                    </div>
+
+                    <input
+                      type="password"
+                      class="form-control form-group-input"
+                      id="exampleInputPassword1"
+                    />
+                  </div>
+
+                  <button type="submit" class="button-common contacts-button">
+                    Send message
+                  </button>
+                  <p class="contact-DNA">
+                    If you need to have a DNA first, just contact us at
+                    <span>email@gmail.com</span>
+                  </p>
+                </form>
+                <img class="contacts-image" src="./images/map.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <footer>
+        <div class="main-container">
+          <div class="footer-container">
+            <ul class="d-flex list-link">
+              <li class="list-link-item">
+                <a href="">
+                  <svg class="facebook-logo">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="list-link-item">
+                <a href="">
+                  <svg>
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="list-link-item">
+                <a href="">
+                  <svg>
+                    <use href="./images/symbol-defs.svg#icon-dribbble"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <p class="footer-logo">BlogWorld</p>
+            <p>&copy;2019 All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
     </main>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

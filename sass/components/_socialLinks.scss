@@ -1,0 +1,12 @@
+.list-link li:not(:last-child) {
+  margin-right: 22px;
+}
+
+.list-link svg {
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+}
+svg.facebook-logo {
+  margin-left: -3px;
+}

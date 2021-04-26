@@ -7,12 +7,10 @@ html {
   box-sizing: inherit;
 }
 body {
-  //   background-color: $secondary-text-color;
   color: $primary-text-color;
   font-family: $main-font;
-  // letter-spacing: 0.03em;
   font-size: 15px;
-  line-height: 1.66;
+  line-height: 1.66; //25px
 }
 
 ul {

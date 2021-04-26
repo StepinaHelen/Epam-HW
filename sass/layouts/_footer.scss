@@ -1,0 +1,27 @@
+.footer-logo {
+  font-size: 17px;
+  line-height: 1.64;
+  font-weight: bold;
+  margin-top: 16px;
+  @media screen and (min-width: 480px) {
+    padding-left: 48px;
+    margin-top: 0px;
+  }
+}
+hr {
+  margin: 0px;
+  border-top: 1px solid $line-color;
+}
+footer {
+  padding-top: 22px;
+  padding-bottom: 21px;
+}
+
+.footer-container {
+  text-align: left;
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}

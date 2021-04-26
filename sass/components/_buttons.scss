@@ -1,0 +1,61 @@
+.button-common {
+  border-radius: 5px;
+  padding: 10px 26px;
+}
+
+.button-left {
+  transform: rotate(90deg);
+}
+
+.button-right {
+  transform: rotate(-90deg);
+}
+.button-svg {
+  position: absolute;
+  width: 14px;
+  height: 18px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.buttons {
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+  border: 1px solid $primary-text-color;
+  background-color: $secondary-text-color;
+}
+.functional-button {
+  padding: 10px 26px;
+  text-align: center;
+}
+.all-buttons-container {
+  text-align: center;
+}
+.portfolio-button-left {
+  margin-right: 20px;
+  @media screen and (min-width: 480px) {
+    margin-right: 270px;
+  }
+}
+.button-container {
+  margin-bottom: 40px;
+}
+
+.testimonials-button-left {
+  position: absolute;
+  left: 20px;
+  @media screen and (min-width: 768px) {
+    left: -75px;
+  }
+}
+.testimonials-button-right {
+  position: absolute;
+  right: 20px;
+  @media screen and (min-width: 768px) {
+    right: -75px;
+  }
+}
+.buttons:hover {
+  box-shadow: 0 3px 10px 0 $shadow-buttons-color;
+}

@@ -1,0 +1,66 @@
+.header {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.62;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.underline-of-headers-container {
+  position: relative;
+}
+
+.underline {
+  position: absolute;
+  height: 8px;
+  border-bottom: 1px solid $primary-text-color;
+  border-right: 1px solid $primary-text-color;
+  border-left: 1px solid $primary-text-color;
+}
+.about-underline-of-headers {
+  width: 94px;
+}
+.posts-underline-of-headers {
+  width: 124px;
+}
+
+.portfolio-underline-of-headers {
+  width: 159px;
+}
+.testimonials-underline-of-headers {
+  width: 131px;
+}
+.contacts-underline-of-headers {
+  width: 110px;
+}
+.underline-of-headers {
+  top: 40px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.underline::after,
+.underline::before {
+  content: '';
+  display: block;
+  width: 3px;
+  position: absolute;
+  border-top: 1px solid $primary-text-color;
+}
+
+.underline::before {
+  left: -3px;
+}
+
+.underline::after {
+  right: -3px;
+}
+.subtitle {
+  margin: 0px auto;
+  margin-bottom: 60px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.52;
+  @media screen and (min-width: 480px) {
+    width: 440px;
+  }
+}

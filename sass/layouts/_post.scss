@@ -1,0 +1,46 @@
+.posts {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.post-item:before {
+  // color: red;
+  content: '\00B7'; /* Сам маркер */
+  padding-right: 10px; /* Расстояние от маркера до текста */
+}
+.post-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 225px;
+}
+.post-list-item {
+  width: 213px;
+}
+.post-svg {
+  width: 14px;
+  height: 13px;
+}
+.card-body {
+  padding: 0px;
+}
+.card-img-top {
+  margin-bottom: 20px;
+}
+.posts .col {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.posts .row {
+  margin-right: -20px;
+  margin-left: -20px;
+}
+.card-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 5px;
+}
+.card-text {
+  line-height: 1.6;
+  margin-bottom: 19px;
+}
