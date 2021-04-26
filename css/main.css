@@ -210,7 +210,7 @@ header {
 .hero {
   padding-top: 153px;
   padding-bottom: 206px;
-  background-image: url("./../../images/bg.jpg");
+  background-image: url("../images/bg.jpg");
   height: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -703,7 +703,7 @@ video {
 .testimonials {
   padding-top: 80px;
   padding-bottom: 80px;
-  background-image: url(../../images/testimonial.png);
+  background-image: url("../images/testimonial.png");
   height: 800px;
   margin-left: auto;
   margin-right: auto;
