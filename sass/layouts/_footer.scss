@@ -13,13 +13,18 @@ hr {
   border-top: 1px solid $line-color;
 }
 footer {
-  padding-top: 22px;
-  padding-bottom: 21px;
+  position: fixed;
+  left: 0;
+  bottom: 0px;
+  height: 71px;
+  background: $bg-color-section;
+  width: 100%;
 }
 
 .footer-container {
   text-align: left;
-
+  padding-top: 22px;
+  padding-bottom: 21px;
   @media screen and (min-width: 480px) {
     display: flex;
     justify-content: space-between;

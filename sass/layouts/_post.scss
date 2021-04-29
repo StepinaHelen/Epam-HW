@@ -1,10 +1,10 @@
 .posts {
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 42px;
 }
 .post-item:before {
   // color: red;
-  content: '\00B7'; /* Сам маркер */
+  content: "\00B7"; /* Сам маркер */
   padding-right: 10px; /* Расстояние от маркера до текста */
 }
 .post-list {
@@ -43,4 +43,9 @@
 .card-text {
   line-height: 1.6;
   margin-bottom: 19px;
+}
+.posts a {
+  text-decoration: none;
+  display: block;
+  color: #4d4949;
 }

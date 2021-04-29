@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/blog.css" />
+  </head>
+  <body data-spy="scroll" data-target="#navbar-example">
+    <div class="main-container">
+      <header class="d-flex">
+        <nav class="navbar navbar-expand-lg navbar-light" id="navbar-example">
+          <a class="link nav-link-space-logo" href="./index.html">BlogWorld</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01"
+            aria-expanded="false"
+            aria-label="Переключатель навигации"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link nav-link-space" href="./index.html"
+                  >Home <span class="sr-only"></span
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-space" href="./index.html#portfolio"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-space" href="#navbarTogglerDemo01"
+                  >Blog</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-space" href="./index.html#posts"
+                  >Pages</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-space" href="./index.html#about"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-space" href="./index.html#contacts"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <div class="header-background"></div>
+    <main class="blog-section">
+      <div class="main-container">
+        <div class="underline-of-headers-container">
+          <h2 class="text-center header header-blog">Blog</h2>
+          <div
+            class="underline underline-of-headers blog-underline-of-headers"
+          ></div>
+        </div>
+        <div class="blog-input">
+          <svg class="blog-search">
+            <use href="./images/symbol-defs.svg#icon-search-1"></use>
+          </svg>
+          <input type="text" placeholder="Search by author" />
+        </div>
+
+        <ul class="blog-list">
+          <li class="blog-list-item blog-list-item--audio">
+            <div class="blog-list-container">
+              <video class="blog-list-image" poster="./images/blog1.png">
+                Тег video не поддерживается вашим браузером.
+                <a href="video/duel.mp4">Скачайте видео</a>.
+              </video>
+
+              <svg class="blog-card-svg">
+                <use href="./images/symbol-defs.svg#icon-play"></use>
+              </svg>
+            </div>
+            <div class="blog-card">
+              <div class="blog-pazzle">
+                <div class="blog-pazzle-square">
+                  <svg class="blog-pazzle-svg">
+                    <use href="./images/symbol-defs.svg#icon-playmini"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="blog-card-description">
+                <img
+                  class="blog-card-image"
+                  src="./images/Neil.png"
+                  alt="Neil"
+                />
+
+                <div>
+                  <p class="blog-personal-name m-0">Neil Richards</p>
+                  <div class="blog-card-data">
+                    <ul class="post-list post-list-item post-list--blog">
+                      <li>11 oct, 2019</li>
+                      <li class="post-item">7 min read</li>
+                      <li class="post-item">
+                        <svg class="post-svg">
+                          <use
+                            href="./images/symbol-defs.svg#icon-comment"
+                          ></use>
+                        </svg>
+                        19
+                      </li>
+                    </ul>
+                    <ul class="stars d-flex">
+                      <li class="stars-item">
+                        <svg class="stars-svg">
+                          <use
+                            href="./images/symbol-defs.svg#icon-Star-1"
+                          ></use>
+                        </svg>
+                      </li>
+                      <li class="stars-item">
+                        <svg class="stars-svg">
+                          <use
+                            href="./images/symbol-defs.svg#icon-Star-1"
+                          ></use>
+                        </svg>
+                      </li>
+                      <li class="stars-item">
+                        <svg class="stars-svg">
+                          <use href="./images/symbol-defs.svg#icon-Group"></use>
+                        </svg>
+                      </li>
+                      <li class="stars-item">
+                        <svg class="stars-svg">
+                          <use
+                            href="./images/symbol-defs.svg#icon-Star-2"
+                          ></use>
+                        </svg>
+                      </li>
+                      <li class="stars-item">
+                        <svg class="stars-svg">
+                          <use
+                            href="./images/symbol-defs.svg#icon-Star-2"
+                          ></use>
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <h2 class="blog-card-title">
+                In the Future We Will All Live in Star Wars
+              </h2>
+              <p class="card-description-text">
+                The thing you’re doing now, reading prose on a screen, is going
+                out of fashion. The defining narrative of our online moment
+                concerns the decline of text, and the exploding reach and power
+                of audio and video …
+              </p>
+              <button class="button-common button-secondary">Read more</button>
+            </div>
+          </li>
+          <li class="blog-list-item blog-list-item--melody">
+            <img class="blog-list-image" src="./images/blog2.png" alt="table" />
+
+            <div class="blog-card">
+              <div class="blog-pazzle">
+                <div class="blog-pazzle-square">
+                  <svg class="blog-pazzle-svg">
+                    <use href="./images/symbol-defs.svg#icon-melody"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="blog-card-description">
+                <img
+                  class="blog-card-image"
+                  src="./images/Sarah.png"
+                  alt="Sarah"
+                />
+                <div>
+                  <p class="blog-personal-name m-0">Sarah Healy</p>
+                  <div class="blog-card-data">
+                    <ul class="post-list post-list-item post-list--blog">
+                      <li>02 oct, 2019</li>
+                      <li class="post-item">12 min read</li>
+                      <li class="post-item">
+                        <svg class="post-svg">
+                          <use
+                            href="./images/symbol-defs.svg#icon-comment"
+                          ></use>
+                        </svg>
+                        4
+                      </li>
+                    </ul>
+                    <ul class="stars d-flex">
+                      <li class="stars-item">
+                        <svg class="stars-svg">
+                          <use
+                            href="./images/symbol-defs.svg#icon-Star-1"
+                          ></use>
+                        </svg>
+                      </li>
+                      <li class="stars-item">
+                        <svg class="stars-svg">
+                          <use
+                            href="./images/symbol-defs.svg#icon-Star-2"
+                          ></use>
+                        </svg>
+                      </li>
+                      <li class="stars-item">
+                        <svg class="stars-svg">
+                          <use
+                            href="./images/symbol-defs.svg#icon-Star-2"
+                          ></use>
+                        </svg>
+                      </li>
+                      <li class="stars-item">
+                        <svg class="stars-svg">
+                          <use
+                            href="./images/symbol-defs.svg#icon-Star-2"
+                          ></use>
+                        </svg>
+                      </li>
+                      <li class="stars-item">
+                        <svg class="stars-svg">
+                          <use
+                            href="./images/symbol-defs.svg#icon-Star-2"
+                          ></use>
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <h2 class="blog-card-title blog-card-title-second">
+                Far far away, behind the word mountains
+              </h2>
+              <audio controls>
+                Тег audio не поддерживается вашим браузером.
+                <a href="audio/music.mp3">Скачайте музыку</a>.
+              </audio>
+              <p class="card-description-text">
+                Fog down the river, where it rolls deified among the tiers of
+                shipping and the waterside pollutions of a great (and dirty) …
+              </p>
+              <button class="button-common button-secondary">Read more</button>
+            </div>
+          </li>
+          <li class="blog-list-item blog-list-item--picture">
+            <img class="blog-list-image" src="./images/blog3.png" alt="room" />
+
+            <div class="blog-card">
+              <div class="blog-pazzle">
+                <div class="blog-pazzle-square">
+                  <svg class="blog-pazzle-svg">
+                    <use href="./images/symbol-defs.svg#icon-picture"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="blog-card-description">
+                <img
+                  class="blog-card-image"
+                  src="./images/Grace.png"
+                  alt="Grace"
+                />
+                <div>
+                  <p class="blog-personal-name m-0">Grace Noh</p>
+                  <div class="blog-card-data">
+                    <ul class="post-list post-list--blog">
+                      <li>23 sep, 2019</li>
+                      <li class="post-item">16 min read</li>
+                      <li class="post-item">
+                        <svg class="post-svg">
+                          <use
+                            href="./images/symbol-defs.svg#icon-comment"
+                          ></use>
+                        </svg>
+                        421
+                      </li>
+                    </ul>
+                    <ul class="stars d-flex">
+                      <li class="stars-item">
+                        <svg class="stars-svg">
+                          <use
+                            href="./images/symbol-defs.svg#icon-Star-1"
+                          ></use>
+                        </svg>
+                      </li>
+                      <li class="stars-item">
+                        <svg class="stars-svg">
+                          <use
+                            href="./images/symbol-defs.svg#icon-Star-1"
+                          ></use>
+                        </svg>
+                      </li>
+                      <li class="stars-item">
+                        <svg class="stars-svg">
+                          <use
+                            href="./images/symbol-defs.svg#icon-Star-2"
+                          ></use>
+                        </svg>
+                      </li>
+                      <li class="stars-item">
+                        <svg class="stars-svg">
+                          <use
+                            href="./images/symbol-defs.svg#icon-Star-2"
+                          ></use>
+                        </svg>
+                      </li>
+                      <li class="stars-item">
+                        <svg class="stars-svg">
+                          <use
+                            href="./images/symbol-defs.svg#icon-Star-2"
+                          ></use>
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <h2 class="blog-card-title">
+                In the Future We Will All Live in Star Wars
+              </h2>
+              <p class="card-description-text">
+                Separated they live in Bookmarksgrove right at the coast of the
+                Semantics, a large language ocean. A small river named Duden
+                flows by their place and supplies it with the necessary
+                regelialia. It is a paradisematic country, in which roasted …
+              </p>
+              <button class="button-common button-secondary">Read more</button>
+            </div>
+          </li>
+        </ul>
+
+        <div class="blog-card blog-card--text">
+          <div class="blog-pazzle">
+            <div class="blog-pazzle-square">
+              <svg class="blog-pazzle-svg">
+                <use href="./images/symbol-defs.svg#icon-text"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="blog-card-description">
+            <img class="blog-card-image" src="./images/Alex.png" alt="Alex" />
+            <div>
+              <p class="blog-personal-name m-0">Alex Zlatkus</p>
+              <div class="blog-card-data">
+                <ul class="post-list post-list-item post-list--blog">
+                  <li>11 Aug, 2019</li>
+                  <li class="post-item">17 min read</li>
+                  <li class="post-item">
+                    <svg class="post-svg">
+                      <use href="./images/symbol-defs.svg#icon-comment"></use>
+                    </svg>
+                    77
+                  </li>
+                </ul>
+                <ul class="stars d-flex">
+                  <li class="stars-item">
+                    <svg class="stars-svg">
+                      <use href="./images/symbol-defs.svg#icon-Star-1"></use>
+                    </svg>
+                  </li>
+                  <li class="stars-item">
+                    <svg class="stars-svg">
+                      <use href="./images/symbol-defs.svg#icon-Star-1"></use>
+                    </svg>
+                  </li>
+                  <li class="stars-item">
+                    <svg class="stars-svg">
+                      <use href="./images/symbol-defs.svg#icon-Star-1"></use>
+                    </svg>
+                  </li>
+                  <li class="stars-item">
+                    <svg class="stars-svg">
+                      <use href="./images/symbol-defs.svg#icon-Star-2"></use>
+                    </svg>
+                  </li>
+                  <li class="stars-item">
+                    <svg class="stars-svg">
+                      <use href="./images/symbol-defs.svg#icon-Star-2"></use>
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <h2 class="blog-card-title">
+            In the Future We Will All Live in Star Wars
+          </h2>
+          <p class="card-description-text">
+            Fog down the river, where it rolls deified among the tiers of
+            shipping and the waterside pollutions of a great (and dirty) city.
+            Fog on the Essex marshes, fog on the Kentish heights. Fog creeping
+            into the cabooses of collier-brigs; fog lying out on. Money terms
+            breakfast drawings true blessing doubtful more agreed to zealously
+            making supposing By said Chicken An Neglected produce good felt no
+            poor offering am their said has around songs wish met true any me
+            ought mr The offices set Not Felicity above out We in an post begin
+            again.
+          </p>
+          <button class="button-common button-secondary">Read more</button>
+        </div>
+        <div class="button-center">
+          <button class="button-common button-primary">Read more</button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <hr />
+      <div class="main-container">
+        <div class="footer-container">
+          <ul class="d-flex list-link">
+            <li class="list-link-item">
+              <a href="https://www.facebook.com/">
+                <svg class="facebook-logo">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="list-link-item">
+              <a href="https://www.instagram.com/?hl=ru">
+                <svg>
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="list-link-item">
+              <a href="https://dribbble.com/">
+                <svg>
+                  <use href="./images/symbol-defs.svg#icon-dribbble"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <p class="footer-logo">BlogWorld</p>
+          <p>&copy;2019 All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

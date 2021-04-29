@@ -1,8 +1,24 @@
 header {
   position: absolute;
 }
+.navbar-expand-lg .nav-tabs {
+  border-bottom: 0px solid #061320;
+}
+.nav-item a:hover {
+  text-decoration: underline;
+  font-weight: 600;
+}
+#navbarTogglerDemo01 .nav-link-space.active {
+  border-color: transparent;
+  text-decoration: underline;
+  font-weight: 600;
+}
+.nav-tabs .nav-link:hover {
+  border-color: transparent;
+}
 .navbar {
   padding: 0px;
+  position: fixed;
   @media screen and (min-width: 320px) {
     width: 290px;
   }
@@ -27,9 +43,12 @@ header {
     margin-right: 622px;
   }
 }
+.nav-link-space-logo:hover {
+  color: $primary-text-color;
+}
 
 #navbarTogglerDemo01 .nav-link-space {
-  background-color: $bg-color-button-dark;
+  background-color: $secondary-text-color;
   color: $primary-text-color;
   padding: 20px 0px;
   text-align: center;
@@ -45,4 +64,7 @@ header {
   @media screen and (min-width: 992px) {
     margin-right: 40px;
   }
+}
+nav {
+  z-index: 500000;
 }

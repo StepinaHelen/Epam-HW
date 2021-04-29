@@ -19,6 +19,9 @@
 .about-underline-of-headers {
   width: 94px;
 }
+.blog-underline-of-headers {
+  width: 47px;
+}
 .posts-underline-of-headers {
   width: 124px;
 }
@@ -40,7 +43,7 @@
 
 .underline::after,
 .underline::before {
-  content: '';
+  content: "";
   display: block;
   width: 3px;
   position: absolute;
@@ -63,4 +66,12 @@
   @media screen and (min-width: 480px) {
     width: 440px;
   }
+}
+.header-background {
+  position: sticky;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+  height: 79px;
+  background-color: white;
 }

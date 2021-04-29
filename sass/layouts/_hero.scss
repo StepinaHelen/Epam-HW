@@ -2,15 +2,15 @@
   padding-top: 153px;
   padding-bottom: 206px;
 
-  background-image: url('../images/bg.jpg');
+  background-image: url("../images/bg.jpg");
   height: 600px;
-  // max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+
 .hero-title {
   font-size: 28px;
   line-height: 1.3;
@@ -18,6 +18,7 @@
 
   margin-bottom: 22px;
   width: 416px;
+
   @media screen and (min-width: 320px) {
     width: 290px;
   }
@@ -40,29 +41,6 @@
     width: 660px;
   }
 }
-.hero-button-explore {
-  color: $secondary-text-color;
-  background-color: $bg-color-button-dark;
-  border: 1px solid $secondary-text-color;
+.button-margin {
   margin-right: 20px;
-}
-.hero-button-learn {
-  color: $primary-text-color;
-  border: 1px solid $primary-text-color;
-  background-color: transparent;
-}
-.hero-button-explore:hover {
-  background-color: $bg-color-button-dark-accent;
-}
-.hero-button-learn:hover {
-  color: $secondary-text-color;
-  background-color: $bg-color-button-dark-accent;
-}
-.hero-button-explore:disabled {
-  background-color: $bg-color-button-dark-disabled;
-}
-.hero-button-learn:disabled {
-  color: $bg-color-button-white-disabled;
-  background-color: $secondary-text-color;
-  border: 1px solid $primary-text-color;
 }

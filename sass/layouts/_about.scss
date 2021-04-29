@@ -1,6 +1,6 @@
 .about {
   text-align: center;
-  padding-top: 80px;
+  padding-top: 1px;
   padding-bottom: 34px;
 }
 .cards {
@@ -107,7 +107,7 @@ video {
   background-color: #ffb0b0;
 }
 .cards-puzzle {
-  content: '';
+  content: "";
   top: -1px;
   left: -1px;
   position: absolute;
@@ -120,7 +120,7 @@ video {
 }
 
 .cards-puzzle::before {
-  content: '';
+  content: "";
   border-top: 3px solid $secondary-text-color;
   border-right: 3px solid transparent;
   position: absolute;
@@ -128,7 +128,7 @@ video {
   right: -3px;
 }
 .cards-puzzle::after {
-  content: '';
+  content: "";
   border-top: 3px solid $secondary-text-color;
   border-right: 3px solid transparent;
   position: absolute;

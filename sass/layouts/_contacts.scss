@@ -1,9 +1,9 @@
 .contacts {
   padding-top: 80px;
-  padding-bottom: 0px;
+  padding-bottom: 71px;
 }
 .contacts-main-container {
-  padding-bottom: 15px;
+  padding-bottom: 17px;
 }
 .contacts-item-title::before {
   content: "\2A00 ";
@@ -23,6 +23,7 @@
   font-size: 15px;
   line-height: 1.73;
   font-weight: bold;
+
   & p {
     font-weight: 400;
   }
@@ -39,6 +40,7 @@
   border: 1px solid $line-color;
 }
 .contacts-form {
+  box-shadow: 0px 4px 13px 8px rgba(34, 60, 80, 0.2);
   @media screen and (min-width: 1200px) {
     width: 760px;
     position: absolute;
@@ -143,16 +145,6 @@
 .contacts-subtitle {
   margin-bottom: 84px;
 }
-.contacts-button {
-  color: $secondary-text-color;
-  background-color: $primary-text-color;
-  border: 1px solid $secondary-text-color;
+form .button-margin {
   margin-bottom: 40px;
-}
-.contacts-button:hover {
-  background-color: $bg-color-button-dark-accent;
-}
-
-.contacts-button:disabled {
-  background-color: $bg-color-button-dark-disabled;
 }

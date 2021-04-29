@@ -1,6 +1,36 @@
 .button-common {
   border-radius: 5px;
   padding: 10px 26px;
+  height: 45px;
+}
+
+.button-primary {
+  color: $secondary-text-color;
+  background-color: $bg-color-button-dark;
+  border: 1px solid $secondary-text-color;
+}
+
+.button-primary:hover {
+  background-color: $bg-color-button-dark-accent;
+}
+.button-primary:disabled {
+  background-color: $bg-color-button-dark-disabled;
+}
+
+.button-secondary {
+  color: $primary-text-color;
+  border: 1px solid $primary-text-color;
+  background-color: transparent;
+}
+
+.button-secondary:hover {
+  color: $secondary-text-color;
+  background-color: $bg-color-button-dark-accent;
+}
+.button-secondary:disabled {
+  color: $bg-color-button-white-disabled;
+  background-color: $secondary-text-color;
+  border: 1px solid $primary-text-color;
 }
 
 .button-left {
