@@ -149,6 +149,12 @@
 </symbol>
 <symbol id="icon-search-1" viewBox="0 0 32 32">
 <title>search-1</title>
+<path fill="#fff" style="fill: var(--color2,  #fff)" d="M23.483 20.655c1.575-2.15 2.517-4.792 2.517-7.655 0-7.168-5.832-13-13-13s-13 5.832-13 13c0 7.168 5.832 13 13 13 2.863 0 5.505-0.942 7.655-2.517l8.517 8.517 2.828-2.828c0-0-8.517-8.517-8.517-8.517v0zM13 22c-4.963 0-9-4.037-9-9s4.037-9 9-9c4.963 0 9 4.037 9 9s-4.037 9-9 9z"></path>
+<path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="4" stroke-width="0.9412" d="M13.176 7.529v11.294"></path>
+<path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="4" stroke-width="0.9412" d="M18.824 13.176h-11.294"></path>
+</symbol>
+<symbol id="icon-search-2" viewBox="0 0 32 32">
+<title>search-1</title>
 <path fill="#fff" style="fill: var(--color2, black)" d="M23.483 20.655c1.575-2.15 2.517-4.792 2.517-7.655 0-7.168-5.832-13-13-13s-13 5.832-13 13c0 7.168 5.832 13 13 13 2.863 0 5.505-0.942 7.655-2.517l8.517 8.517 2.828-2.828c0-0-8.517-8.517-8.517-8.517v0zM13 22c-4.963 0-9-4.037-9-9s4.037-9 9-9c4.963 0 9 4.037 9 9s-4.037 9-9 9z"></path>
 <path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="4" stroke-width="0.9412" d="M13.176 7.529v11.294"></path>
 <path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="4" stroke-width="0.9412" d="M18.824 13.176h-11.294"></path>
