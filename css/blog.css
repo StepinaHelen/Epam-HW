@@ -335,21 +335,42 @@ nav {
 
 .testimonials-button-left {
   position: absolute;
-  left: 20px;
+}
+@media screen and (min-width: 480px) {
+  .testimonials-button-left {
+    top: 46%;
+  }
 }
 @media screen and (min-width: 768px) {
   .testimonials-button-left {
-    left: -75px;
+    top: 110px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .testimonials-button-left {
+    top: 110px;
+    left: 225px;
   }
 }
 
 .testimonials-button-right {
   position: absolute;
-  right: 20px;
+  right: 0px;
+}
+@media screen and (min-width: 480px) {
+  .testimonials-button-right {
+    top: 46%;
+  }
 }
 @media screen and (min-width: 768px) {
   .testimonials-button-right {
-    right: -75px;
+    top: 110px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .testimonials-button-right {
+    top: 110px;
+    right: 225px;
   }
 }
 
@@ -431,6 +452,10 @@ footer {
   }
 }
 
+.footer-container a {
+  color: #4d4c49;
+}
+
 .list-link li:not(:last-child) {
   margin-right: 22px;
 }
@@ -497,6 +522,10 @@ svg.facebook-logo {
   }
 }
 
+.blog-list li:hover {
+  box-shadow: 0 75px 30px -80px gray;
+}
+
 .blog-card-description {
   display: flex;
   align-items: center;
@@ -514,6 +543,7 @@ svg.facebook-logo {
 
 .blog-card-image {
   margin-right: 15px;
+  border-radius: 50%;
 }
 
 .blog-card {
@@ -522,6 +552,15 @@ svg.facebook-logo {
 @media screen and (min-width: 1200px) {
   .blog-card {
     padding: 27px 100px 40px 40px;
+  }
+}
+
+.blog-card:not(:last-child) {
+  width: 360px;
+}
+@media screen and (min-width: 1200px) {
+  .blog-card:not(:last-child) {
+    width: 600px;
   }
 }
 
@@ -649,6 +688,28 @@ audio {
 @media screen and (min-width: 1200px) {
   .blog-card-description .post-list--blog {
     display: flex;
+  }
+}
+
+.blog-list-item--picture,
+.blog-list-item--melody,
+.blog-list-item--audio {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .blog-list-item--picture,
+.blog-list-item--melody,
+.blog-list-item--audio {
+    display: flex;
+    width: 738px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .blog-list-item--picture,
+.blog-list-item--melody,
+.blog-list-item--audio {
+    display: flex;
+    width: 1160px;
   }
 }
 

@@ -748,21 +748,42 @@ video {
 
 .testimonials-button-left {
   position: absolute;
-  left: 20px;
+}
+@media screen and (min-width: 480px) {
+  .testimonials-button-left {
+    top: 46%;
+  }
 }
 @media screen and (min-width: 768px) {
   .testimonials-button-left {
-    left: -75px;
+    top: 110px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .testimonials-button-left {
+    top: 110px;
+    left: 225px;
   }
 }
 
 .testimonials-button-right {
   position: absolute;
-  right: 20px;
+  right: 0px;
+}
+@media screen and (min-width: 480px) {
+  .testimonials-button-right {
+    top: 46%;
+  }
 }
 @media screen and (min-width: 768px) {
   .testimonials-button-right {
-    right: -75px;
+    top: 110px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .testimonials-button-right {
+    top: 110px;
+    right: 225px;
   }
 }
 
@@ -788,20 +809,41 @@ video {
 }
 
 .testimonials-infrom {
-  display: block;
   position: relative;
+}
+
+.testimonials-infrom-list {
+  overflow: hidden;
+  display: flex;
+  width: 280px;
   margin-left: auto;
   margin-right: auto;
-  width: 280px;
+  border-radius: 5px;
+  transition: 0.5s;
 }
 @media screen and (min-width: 768px) {
-  .testimonials-infrom {
+  .testimonials-infrom-list {
+    width: 560px;
+  }
+}
+
+.testimonials-infrom-item {
+  display: block;
+  margin: 0 auto;
+  min-width: 280px;
+}
+@media screen and (min-width: 768px) {
+  .testimonials-infrom-item {
     border-radius: 0 0 5px 5px;
     align-items: center;
     margin: 0 auto;
-    width: 560px;
+    min-width: 560px;
     display: flex;
   }
+}
+
+.testimonials-infrom-list:hover {
+  transform: scale(1.08);
 }
 
 .testimonials-text-container {
@@ -834,11 +876,23 @@ video {
 
 .testimonials-image {
   margin-bottom: 20px;
+  width: 280px;
+  height: 265px;
 }
 @media screen and (min-width: 768px) {
   .testimonials-image {
     margin-bottom: 0px;
   }
+}
+
+@media screen and (min-width: 768px) {
+  .visible {
+    display: flex;
+  }
+}
+
+.unvisible {
+  display: none;
 }
 
 .contacts {
@@ -1057,6 +1111,10 @@ footer {
     display: flex;
     justify-content: space-between;
   }
+}
+
+.footer-container a {
+  color: #4d4c49;
 }
 
 .list-link li:not(:last-child) {
