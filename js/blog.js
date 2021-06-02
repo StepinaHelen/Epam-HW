@@ -135,6 +135,10 @@ function getAudioData(data, item) {
 function getImageData(data, item) {
   if (data.results.length === 0) {
     poster = "./images/blog2.png";
+    item.insertAdjacentHTML(
+      "afterbegin",
+      `<img class="blog-list-image" src=${poster} alt="table"/>`
+    );
   }
   if (data.results.length >= 1) {
     foto = `https://image.tmdb.org/t/p/original/${data.results[0].author_details.avatar_path.slice(

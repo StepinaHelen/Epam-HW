@@ -105,3 +105,13 @@
 .buttons:hover {
   box-shadow: 0 3px 10px 0 $shadow-buttons-color;
 }
+
+.testimonials-button-right:disabled,
+.testimonials-button-left:disabled {
+  color: rgba(77, 73, 73, 0.4);
+  border: 1px solid rgba(77, 73, 73, 0.4);
+  pointer-events: none;
+  .button-svg {
+    fill: rgba(77, 73, 73, 0.4);
+  }
+}

@@ -1,6 +1,5 @@
 function templateVideo(foto, name, title, description, day) {
   let marcup = `<div class="blog-list-item">
-              
             <div class="blog-card">
               <div class="blog-pazzle">
                 <div class="blog-pazzle-square">

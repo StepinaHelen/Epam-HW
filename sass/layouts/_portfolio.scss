@@ -36,11 +36,13 @@
 }
 .portfolio-container-card {
   margin-bottom: 16px;
+  // display: flex;
 }
 
 .portfolio-image {
   margin-bottom: 0px;
 }
+
 .portfolio-container:hover {
   cursor: pointer;
   .overlay {
@@ -67,4 +69,56 @@
 }
 .portfolio .card-title {
   margin-bottom: 0px;
+}
+.portfolio-container-card {
+  overflow: hidden;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 320px) {
+    height: 845px;
+    width: 320px;
+  }
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    height: 945px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    height: 150px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1160px;
+    height: 245px;
+  }
+}
+.portfolio-container-item {
+  margin: 0 auto;
+  min-width: 1160px;
+  @media screen and (min-width: 320px) {
+    min-width: 320px;
+  }
+  @media screen and (min-width: 480px) {
+    min-width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    min-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    min-width: 1160px;
+  }
+}
+.portfolio-container-item-wrapper {
+  display: block;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+.visible {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+.unvisible {
+  display: none;
 }

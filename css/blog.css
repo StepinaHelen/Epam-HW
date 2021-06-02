@@ -378,6 +378,17 @@ nav {
   box-shadow: 0 3px 10px 0 #6d6d6d;
 }
 
+.testimonials-button-right:disabled,
+.testimonials-button-left:disabled {
+  color: rgba(77, 73, 73, 0.4);
+  border: 1px solid rgba(77, 73, 73, 0.4);
+  pointer-events: none;
+}
+.testimonials-button-right:disabled .button-svg,
+.testimonials-button-left:disabled .button-svg {
+  fill: rgba(77, 73, 73, 0.4);
+}
+
 .main-container,
 .hero-container {
   width: 1210px;
@@ -552,6 +563,7 @@ svg.facebook-logo {
 @media screen and (min-width: 1200px) {
   .blog-card {
     padding: 27px 100px 40px 40px;
+    height: 379px;
   }
 }
 
@@ -711,6 +723,10 @@ audio {
     display: flex;
     width: 1160px;
   }
+}
+
+.blog-list-item--picture {
+  flex-direction: row-reverse;
 }
 
 .posts {

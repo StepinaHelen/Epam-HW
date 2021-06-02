@@ -63,6 +63,7 @@
   position: relative;
   @media screen and (min-width: 1200px) {
     padding: 27px 100px 40px 40px;
+    height: 379px;
   }
 }
 .blog-card:not(:last-child) {
@@ -192,4 +193,7 @@ audio {
     display: flex;
     width: 1160px;
   }
+}
+.blog-list-item--picture {
+  flex-direction: row-reverse;
 }
