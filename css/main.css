@@ -670,7 +670,7 @@ video {
 }
 @media screen and (min-width: 320px) {
   .portfolio-container-card {
-    height: 845px;
+    height: 600px;
     width: 320px;
   }
 }

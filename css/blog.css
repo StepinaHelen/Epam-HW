@@ -610,6 +610,23 @@ svg.facebook-logo {
   }
 }
 
+.blog-card-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: transparent;
+  border-radius: 50%;
+  outline: none;
+  border: 0px solid transparent;
+  width: 72px;
+  height: 72px;
+  transform: translate(-50%, -50%);
+}
+
+.blog-card--text {
+  position: relative;
+}
+
 .blog-card-svg {
   position: absolute;
   width: 72px;
