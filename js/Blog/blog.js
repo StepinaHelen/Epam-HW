@@ -148,7 +148,7 @@ function getImageData(data, item) {
     )}`;
     name = ` ${data.results[0].author}`;
     title = `${data.results[0].name}`;
-    description = `${data.results[0].content.slice(0, 210) + "..."}`;
+    description = `${data.results[0].content.slice(0, 150) + "..."}`;
     day = ` ${data.results[0].created_at.slice(0, 10)}`;
     poster = getPoster(data.id, item);
   }
