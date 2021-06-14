@@ -46,7 +46,7 @@ class Movie {
       foto = `${data.results[0].author_details.avatar_path.slice(1)}`;
       name = ` ${data.results[0].author}`;
       title = getTitle.original_title;
-      description = `${data.results[0].content.slice(0, 210) + "..."}`;
+      description = `${data.results[0].content.slice(0, 150) + "..."}`;
       day = ` ${data.results[0].created_at.slice(0, 10)}`;
       url = `${data.results[0].url}`;
     }

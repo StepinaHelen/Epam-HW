@@ -533,7 +533,7 @@ svg.facebook-logo {
   }
 }
 
-.blog-list li:hover {
+.blog-list-item-container:hover {
   box-shadow: 0 75px 30px -80px gray;
 }
 
@@ -744,6 +744,22 @@ audio {
 
 .blog-list-item--picture {
   flex-direction: row-reverse;
+}
+
+.notification {
+  position: fixed;
+  z-index: 1000;
+  padding: 40px;
+  border-radius: 20px;
+  color: white;
+  font-size: 20px;
+  background: rgba(219, 15, 93, 0.76);
+  text-align: center;
+}
+
+.blog-input-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .posts {

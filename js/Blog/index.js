@@ -37,24 +37,17 @@ class Video extends Movie {
   }
 }
 
-const video = new Video();
-video.getMarcup(0, listRef[0], template.templateVideo);
-
 class Audio extends Movie {
   async getMarcup(index, element, template) {
     await super.getMarcup(index, element, template);
   }
 }
-const audio = new Audio();
-audio.getMarcup(1, listRef[1], template.template);
 
 class Image extends Movie {
   async getMarcup(index, element, template) {
     await super.getMarcup(index, element, template);
   }
 }
-const image = new Image();
-image.getMarcup(2, listRef[2], template.templateImage);
 
 class Text extends Movie {
   async getMarcup(index, element, template) {
@@ -62,5 +55,78 @@ class Text extends Movie {
   }
 }
 
+const video = new Video();
+video.getMarcup(0, listRef[0], template.templateVideo);
+
+const audio = new Audio();
+audio.getMarcup(1, listRef[1], template.template);
+
+const image = new Image();
+image.getMarcup(2, listRef[2], template.templateImage);
+
 const text = new Text();
 text.getMarcup(3, listRef[3], template.templateText);
+
+const inputRef = document.querySelector(".input-field-author");
+const inputRefTitle = document.querySelector(".input-field");
+
+inputRefTitle.addEventListener("input", (e) => {
+  const titleRef = document.querySelectorAll(".blog-card-title ");
+  let filter = e.target.value.toLowerCase();
+  localStorage.setItem("filter", filter);
+  let sum = 0;
+
+  titleRef.forEach((item, index) => {
+    if (item.innerHTML.toLowerCase().indexOf(filter) > -1) {
+      listRef[index].style.display = "";
+    } else if (item.innerHTML.toLowerCase().indexOf(filter) === -1) {
+      listRef[index].style.display = "none";
+      sum += 1;
+    }
+  });
+
+  if (sum === titleRef.length) {
+    showNotification({
+      top: 30,
+      right: 30,
+      html: "Please enter a valid value!",
+    });
+  }
+});
+
+// inputRef.addEventListener("input", (e) => {
+//   const authortsRef = document.querySelectorAll(".blog-personal-name ");
+//   let filter = e.target.value.toLowerCase();
+//   let sum = 0;
+
+//   authortsRef.forEach((item, index) => {
+//     if (item.innerHTML.toLowerCase().indexOf(filter) > -1) {
+//       listRef[index].style.display = "";
+//     } else if (item.innerHTML.toLowerCase().indexOf(filter) === -1) {
+//       listRef[index].style.display = "none";
+//       sum += 1;
+//     }
+//   });
+
+//   if (sum === authortsRef.length) {
+//     showNotification({
+//       top: 30,
+//       right: 30,
+//       html: "Please enter a valid value!",
+//     });
+//   }
+// });
+
+function showNotification({ top = 0, right = 0, html }) {
+  let notification = document.createElement("div");
+
+  notification.className = "notification";
+
+  notification.style.top = top + "px";
+  notification.style.right = right + "px";
+
+  notification.innerHTML = html;
+  document.body.append(notification);
+
+  setTimeout(() => notification.remove(), 3000);
+}
